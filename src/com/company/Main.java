@@ -145,5 +145,38 @@ public class Main {
         }
         System.out.println("Tuition per 15 years: " + total);
         System.out.println("Tuition per 10 years: " + tenYearsTuition);
+
+
+        int highestScore = 0; 			// Holds the hightest student score
+        String highestScoreName = ""; // Holds the student name with highest score
+
+        // Prompt the user to enter the number of students
+        System.out.print("Enter the number of students: ");
+        int numberOfStudents = sc.nextInt();
+
+        // Prompt the user to enter each student's name and score
+        System.out.println("Enter each student’s name and score");
+        for (int i = 0; i < numberOfStudents; i++) {
+            System.out.print(
+                    "Student: " + (i + 1) +
+                            "\n   Name: ");
+            String name = sc.next();
+            System.out.print(
+                    "   Score: ");
+            int score = sc.nextInt();
+
+            // Test if score is higher than highest score
+            if (score > highestScore)
+            {
+                highestScore = score;
+                highestScoreName = name;
+            }
+
+        }
+
+        // Display the name of the student with the highest score
+        System.out.println("Student with the highest score: " + highestScoreName);
+
+
     }
 }
