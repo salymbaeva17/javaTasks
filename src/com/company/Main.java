@@ -101,5 +101,12 @@ public class Main {
 //        }
 //        System.out.println(acc / 5);
 
+        System.out.println("Enter n");
+        int n = sc.nextInt();
+        double ans = 0;
+        for (double i = 1; i <= n; i++) {
+            ans += 1.0 / i;
+        }
+        System.out.println(ans);
     }
 }
