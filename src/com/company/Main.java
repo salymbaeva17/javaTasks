@@ -130,5 +130,20 @@ public class Main {
 //
 //        }
 
+
+        int tuition = 10000;
+        int tenYearsTuition = 0;
+        int total = 0;
+        for (int year = 1; year <= 15; year++) {
+            tuition += tuition * 0.05;
+            if (year == 10) {
+                tenYearsTuition = tuition;
+            }
+            if (year > 10) {
+                total += tuition;
+            }
+        }
+        System.out.println("Tuition per 15 years: " + total);
+        System.out.println("Tuition per 10 years: " + tenYearsTuition);
     }
 }
