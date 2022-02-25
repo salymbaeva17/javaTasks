@@ -108,5 +108,9 @@ public class Main {
             ans += 1.0 / i;
         }
         System.out.println(ans);
+
+
+        int cube = (int) Math.pow(n, 3);
+        System.out.println(cube);
     }
 }
