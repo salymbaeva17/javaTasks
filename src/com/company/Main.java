@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-//        Scanner sc = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //        int max = 0;
 //        int b = 0;
 //        String amoount = "";
@@ -24,18 +24,40 @@ public class Main {
 //        }
 //        System.out.println(b);
 //        System.out.println(max);
-        int a, b;
+//        int a, b;
+//
+//        b = 2;
+//
+//        a = ++b;
+//        System.out.println(a);
+//
+//        int count = 5;
+//        while (count > -1 * count) {
+//            System.out.println("Hello");
+//            count--;
+//        }
+//Дано произвольное положительное натуральное число. Найдите его последнюю цифру.
+//        Scanner sc = new Scanner(System.in);
+//        int a1 = sc.nextInt();
+//        System.out.println(a1%10);
 
-        b = 2;
 
-        a = ++b;
-        System.out.println(a);
+//        Дано трехзначное число. Найдите сумму его цифр.
+//        int a2 =sc.nextInt();
+//        System.out.print((a2/100)+(a2%10)+((a2%100-(a2%10))/10));
 
-        int count = 5;
-        while (count > -1 * count) {
-            System.out.println("Hello");
-            count--;
-        }
+
+//        Длина Московской кольцевой автомобильной дороги —109 километров.
+//        Байкер Вася стартует с нулевого километра МКАД и едет со скоростью v километров в час.
+//        На какой отметке он остановится через t часов?
+//        Программа получает на вход значения v и t. Если v>0, то Вася движется в положительном
+//        направлении по МКАД, если же значение v<0, то в отрицательном.
+//        Программа должна вывести целое число от 0 до 108 — номер отметки, на которой остановится Вася.
+        int b1 = sc.nextInt();
+        int c1 = sc.nextInt();
+        System.out.println(((b1*c1+109)%109)%109);
+
+
 //        Hello
 //        Hello
 //        Hello
